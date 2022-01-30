@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.space {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.grid-one {
+    width: 1100px;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template: [header-left] "head head head" 100px [header-right] [nav-left] "nav main aside" 300px [aside-right] [footer-left] "foot foot foot" 50px [footer-right]/120px 1fr;
+}
+
+.header {
+    background-color: cadetblue;
+    grid-area: head;
+}
+
+.nav {
+    background-color: darkslategrey;
+    grid-area: nav;
+}
+
+.main {
+    background-color: darkgray;
+    grid-area: main;
+}
+
+.aside {
+    background-color: lightslategrey;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: dimgrey;
+    grid-area: foot;
+}
+
+.grid-two {
+    width: 1100px;
+    margin: auto;
+}
+
+.head-2 {
+    background-color: burlywood;
+    grid-area: head;
+}
+
+.nav-2 {
+    background-color: tomato;
+    grid-area: nav;
+}
+
+.main-2 {
+    background-color: wheat;
+    grid-area: main;
+}
+
+.foot-2 {
+    background-color: gray;
+    grid-area: foot;
+}
+
+.container-two {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template: [head-2-left] "head head head "[head-2-right] [nav-2-left] "nav main main" 500px [main-2-right] [foot-2-left] "nav foot foot" [foot-2-right]/120px 1fr;
+}
+
+.grid-three {
+    width: 1100px;
+    margin: auto;
+}
+
+.logo-3 {
+    background-color: rgb(68, 66, 66);
+    grid-area: logo-3;
+}
+
+.nav-3 {
+    background-color: gray;
+    grid-area: nav-3;
+}
+
+.main-3 {
+    background-color: hotpink;
+    grid-area: main-3;
+}
+
+.main-31 {
+    background-color: indianred;
+    grid-area: main-31;
+}
+
+.main-32 {
+    background-color: lemonchiffon;
+    grid-area: main-32;
+}
+
+.image-3 {
+    background-color: lightblue;
+    grid-area: image-3;
+}
+
+.Extra-3 {
+    background-color: lightslategray;
+    grid-area: extra-3;
+}
+
+.foot-3 {
+    background-color: rgb(27, 25, 25);
+    grid-area: foot-3;
+}
+
+.container-three {
+    display: grid;
+    width: 100%;
+    text-align: center;
+    grid-template: [logo-3-left] "logo-3 nav-3 nav-3 nav-3" 80px [nav-3-right] [main-3-left] "main-3 main-3 main-3 main-3" 300px [main-3-right] [main-31-left] "main-31 main-31 main-32 image-3" 100px [image-3-right] [main-31-left] "main-31 main-31 main-32 extra-3" 100px [extra-3-right][foot-3-left] "foot-3 foot-3 foot-3 foot-3" 100px [foot-3-right];
+}
